@@ -1,6 +1,6 @@
 {
   "name": "dpc-bootstrap",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Contains various scss utilities that can be used to help start up your applications.",
   "main": "./bin/index.js",
   "repository": {
