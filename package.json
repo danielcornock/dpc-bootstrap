@@ -1,0 +1,31 @@
+{
+  "name": "dpc-bootstrap",
+  "version": "2.0.0",
+  "description": "Contains various scss utilities that can be used to help start up your applications.",
+  "main": "./bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "move-sass": "cp -r ./src/sass-mixins/files ./bin/sass-mixins/files",
+    "build": "npm run remove-bin && npm run build-ts && npm run move-sass",
+    "build-ts": "tsc",
+    "remove-bin": "rm -R bin"
+  },
+  "author": "Daniel Cornock",
+  "license": "ISC",
+  "bin": {
+    "dpc-bootstrap": "./bin/index.js"
+  },
+  "dependencies": {
+    "@types/clear": "^0.1.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/ncp": "^2.0.3",
+    "@types/node": "^12.12.7",
+    "chalk": "^3.0.0",
+    "clear": "^0.1.0",
+    "inquirer": "^7.0.0",
+    "ncp": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
+}
