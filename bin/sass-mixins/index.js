@@ -73,6 +73,7 @@ exports.sass = function () { return __awaiter(void 0, void 0, void 0, function (
                 return [4 /*yield*/, fileTransfer_1.fileTransfer('/sass-mixins/files', './src/assets/styles')];
             case 5:
                 directory = _a.sent();
+                console.log("Don't forget to add " + chalk_1.default.cyan("@import 'src/assets/styles/themes'") + " to each components .scss file!");
                 _a.label = 6;
             case 6:
                 console.log(chalk_1.default.green("Files successfully created in " + directory + "!"));

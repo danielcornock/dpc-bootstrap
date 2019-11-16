@@ -3,6 +3,10 @@
   "version": "2.0.0",
   "description": "Contains various scss utilities that can be used to help start up your applications.",
   "main": "./bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcornock/dpc-bootstrap.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "move-sass": "cp -r ./src/sass-mixins/files ./bin/sass-mixins/files",

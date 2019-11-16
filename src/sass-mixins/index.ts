@@ -25,6 +25,11 @@ export const sass = async (): Promise<void> => {
         '/sass-mixins/files',
         './src/assets/styles'
       );
+      console.log(
+        `Don't forget to add ${chalk.cyan(
+          "@import 'src/assets/styles/themes'"
+        )} to each components .scss file!`
+      );
     }
     console.log(chalk.green(`Files successfully created in ${directory}!`));
   } catch (e) {
